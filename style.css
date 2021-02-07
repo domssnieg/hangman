@@ -1,0 +1,64 @@
+body{
+    background-color: #000000;
+    color: rgb(214, 214, 214);
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+
+#board{
+    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    min-height: 60px;
+}
+
+#gallows{
+    float:left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+}
+
+#alphabet{
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+    float: left;
+
+}
+
+.letter{
+    border: rgb(207, 207, 207) 2px solid;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    padding-top:2px;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.letter:hover{
+    background-color: #222222;
+    color: white;
+    border: white 2px solid;
+}
+
+.reset{
+    cursor: pointer;
+}
+
+.reset:hover{
+    font-size: 35px;
+}
