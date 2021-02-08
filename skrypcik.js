@@ -1,14 +1,19 @@
-var password = "Bez pracy nie ma kołaczy";
-password = password.toUpperCase();
-var howLong = password.length;
 var howManyFalse = 0;
 var password1 = "";
 var yes =new Audio("yes.wav");
-var no= new Audio("no.wav")
+var no= new Audio("no.wav");
+var password = "";
+var pass = new Array("Bez pracy nie ma kołaczy", "Budować zamki na piasku", "Czuć się jak ryba w wodzie", "Dla chcącego nic trudnego", "Gdzie dwóch się bije, tam trzeci korzysta");
+var random=Math.floor(Math.random()*pass.length);
+password=pass[random];
+password = password.toUpperCase();
+var howLong = password.length;
+
 for(i=0;i<howLong; i++){
     if(password.charAt(i)==" ") password1=password1+" ";
     else password1 = password1 + "-";
 }
+
 function printPassword()
 {
     document.getElementById("board").innerHTML=password1;
